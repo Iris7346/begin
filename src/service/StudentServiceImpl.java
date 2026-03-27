@@ -83,7 +83,7 @@ public class StudentServiceImpl implements StudentService {
 
         //3. 判断查询结果
         if(students == null || students.isEmpty()){
-            return "查询失败！";
+            return "查询失败：该班级暂无学生！";
         }
 
         //4. 格式化输出
